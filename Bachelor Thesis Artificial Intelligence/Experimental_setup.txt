@@ -1,0 +1,39 @@
+## First version experimental setup
+
+Parameter grid search (16 plots total): Experiment 1
+Finding out which distribution to use (and its respective variance) and which perturb rate decay to use.
+
+distributions = [gaussian, uniform] (combined in one plot)
+decays (alpha) = [0.01, 0.05, 0.1, 0.2]
+variances (sigma) = [0.01, 0.05, 0.1, 0.2]
+
+----------------------------------------------------------------------------------------------------
+
+Parameter grid search (12 plots total): Experiment 2
+Compare diff mutation with random perturb performance (combined in one plot), using different survivor selection
+mechanisms.
+
+decays (alpha) = [0.01, 0.05, 0.1, 0.2]
+select mechanisms = [merge_all, keep_k_best_parents, keep_only_best_offspring]
+
+--------------------------------------------------------------------------------------------------------
+
+Compare the best performing EA to the baseline RNN and reservoir RNN: Experiment 3
+Trying out among different pop sizes + additional interesting customized parameters
+
+pop_size = [25]
+epochs = [245]
+
+off_spring_ratio = 1 , 2 , 3
+mutate_bias_weights = [True]
+
+best model - run it on MNIST dataset once
+--------------------------------------------------------------------------------------------------------
+
+For each experiment:
+- Plots
+- Save best result on the validation set
+- Results on the test set
+
+
+
