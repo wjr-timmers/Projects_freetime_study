@@ -8,3 +8,5 @@ The implementation consists of a few scripts:
 - main.py runs the main script, from getting the data to producing a schedule
 - schedule.py contains helper function to generate for example an empty / random schedule
 - skillmatrix.py reads a file that indicates the capabilities and skills of every student
+
+* Personal data files were removed from this repository and may affect code excutabllity *
